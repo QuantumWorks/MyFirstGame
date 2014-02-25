@@ -1,3 +1,11 @@
+// MyFirstConsoleGame.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+// MyFirstConsoleGame.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
 #include <iostream>
 #include <Windows.h>
 
@@ -6,24 +14,21 @@ using namespace std;
 
 class Maps {
 public:
-void Map ()
-{
-    char map[ 5 ][ 5 ] =
-    {
-            { '#', '#', '#', '#', '#' },
-            { '#',                '#' },
-            { '#',                '#' },
-            { '#',                '#' },
-            { '#', '#', '#', '#', '#' }
-    };
-}
+	char map[5][5] =
+	{
+		{ '#', '#', '#', '#', '#' },
+		{ '#',                '#' },
+		{ '#',                '#' },
+		{ '#',                '#' },
+		{ '#', '#', '#', '#', '#' }
+	};
 };
 
 
-int mmain ();
+int main()
 {
-	Mpas Mp;
+	Maps Mp;
 	Mp.map;
-  //cout << Map[5] [5] << endl;
+	//cout << Map[5] [5] << endl;
 
 }
