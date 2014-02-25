@@ -4,7 +4,7 @@
 using namespace std;
 
 
-class Maps  () {
+class Maps {
 public:
 void Map ()
 {
