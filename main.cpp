@@ -11,7 +11,7 @@
 
 using namespace std;
 
-
+/*
 class Maps {
 public:
 	char map[5][5] =
@@ -21,14 +21,21 @@ public:
 		{ '#',                '#' },
 		{ '#',                '#' },
 		{ '#', '#', '#', '#', '#' }
-	};
+	};//Char end
 };
+*/
 
 
 int main()
 {
-	Maps Mp;
-	Mp.map;
-	//cout << Map[5] [5] << endl;
+	char map[5][5] =
+	{
+		{ '#', '#', '#', '#', '#' },
+		{ '#',                '#' },
+		{ '#',                '#' },
+		{ '#',                '#' },
+		{ '#', '#', '#', '#', '#' }
+	};//Char end
+	cout << map[5] [5] << endl;
 
 }
