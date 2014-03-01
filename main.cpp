@@ -38,15 +38,12 @@ int main()
 		if (GetAsyncKeyState(VK_DOWN))
 			playerRow += 1;
 		//if (GetAsyncKeyState(VK_LEFT))
-		//	playerCol -= 1;
+		// playerCol -= 1;
 		if (GetAsyncKeyState(VK_RIGHT))
 			playerCol += 1;
 
-
-	//	system("CLS");
 		clearscreen();
-
-
+		clearscreen();
 
 		for (int row = 0; row < 17; ++row)
 		{
