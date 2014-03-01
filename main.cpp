@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+void clearscreen(); //used to prevent flicker
+
 int main()
 {
 	char map[17][62] =
@@ -41,7 +43,8 @@ int main()
 			playerCol += 1;
 
 
-		system("CLS");
+	//	system("CLS");
+		clearscreen();
 
 
 
@@ -55,7 +58,7 @@ int main()
 					cout << map[row][col];
 
 				if (map[playerRow][playerCol] == '#') {
-					system("CLS");
+					clearscreen();
 					cout << "\n\n\n\n\n\t\t\tGame Over!";
 				}
 			}
@@ -66,4 +69,15 @@ int main()
 	system("pause");
 
 	return 0;
+}
+void clearscreen()
+{
+	HANDLE hOut;
+	COORD Position;
+
+	hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	Position.X = 0;
+	Position.Y = 0;
+	SetConsoleCursorPosition(hOut, Position);
 }
