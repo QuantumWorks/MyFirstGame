@@ -30,19 +30,20 @@ int main()
 
 	while (true)
 	{
-			system("Color 1A");
+		system("Color 1A");
 		if (GetAsyncKeyState(VK_UP))
 			playerRow -= 1;
 		if (GetAsyncKeyState(VK_DOWN))
 			playerRow += 1;
-		if (GetAsyncKeyState(VK_LEFT))
-			playerCol -= 1;
+		//if (GetAsyncKeyState(VK_LEFT))
+		//	playerCol -= 1;
 		if (GetAsyncKeyState(VK_RIGHT))
 			playerCol += 1;
 
-		//
 
-		system("cls");
+		system("CLS");
+
+
 
 		for (int row = 0; row < 17; ++row)
 		{
@@ -52,12 +53,15 @@ int main()
 					cout << "@";
 				else
 					cout << map[row][col];
-			}
 
+				if (map[playerRow][playerCol] == '#') {
+					system("CLS");
+					cout << "\n\n\n\n\n\t\t\tGame Over!";
+				}
+			}
 			cout << endl;
 		}
 	}
-	//
 
 	system("pause");
 
