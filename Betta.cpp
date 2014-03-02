@@ -77,13 +77,13 @@ public:
 					if (row == playerRow && col == playerCol)
 						cout << ">";
 					else
-						cout << map[row][col];
+						cout << currentMap[row][col]; // HERE CPP!
 
-					if (map[playerRow][playerCol] == '#') {
+					if (currentMap[playerRow][playerCol] == '#') {
 						system("CLS");
 						cout << "\n\n\n\n\n\t\t\t Game Over!";
 					}
-					else if (map[playerRow][playerCol] == '|') {
+					else if (currentMap[playerRow][playerCol] == '|') {
 						playerRow = 13;
 						playerCol = 1;
 					}
