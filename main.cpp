@@ -35,12 +35,16 @@ public:
 			//system("Color ");
 			if (GetAsyncKeyState(VK_UP))
 				playerRow -= 1;
+			clearscreen();
 			if (GetAsyncKeyState(VK_DOWN))
 				playerRow += 1;
+			clearscreen();
 			if (GetAsyncKeyState(VK_LEFT))
 				playerCol -= 1;
+			clearscreen();
 			if (GetAsyncKeyState(VK_RIGHT))
 				playerCol += 1;
+			clearscreen();
 
 			clearscreen();
 			clearscreen();
