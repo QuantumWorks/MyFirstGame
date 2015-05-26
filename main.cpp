@@ -87,7 +87,7 @@ public:
             }
         }
 
-        system("pause");
+        system("pause>nul");
     }
 };
 
