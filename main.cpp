@@ -1,5 +1,13 @@
+/*
+ *Nice Simple Game Made By Shadi Nachat
+ *This Is Free To Use But Give Me Credit If Your Going To Use It!
+ */
+
+
+#include <stdio.h>
 #include <Windows.h>
 #include <iostream>
+
 using namespace std;
 
 void clearscreen(); //used to prevent flicker
@@ -32,7 +40,6 @@ public:
 
 		while (true)
 		{
-			//system("Color ");
 			if (GetAsyncKeyState(VK_UP))
 				playerRow -= 1;
 			clearscreen();
@@ -45,10 +52,6 @@ public:
 			if (GetAsyncKeyState(VK_RIGHT))
 				playerCol += 1;
 			clearscreen();
-
-			clearscreen();
-			clearscreen();
-
 			for (int row = 0; row < 16; ++row)
 			{
 				for (int col = 0; col < 66; ++col)
@@ -60,7 +63,7 @@ public:
 
 					if (map[playerRow][playerCol] == '#') {
 						system("CLS");
-						cout << "\n\n\n\n\n\t\t\tGame Over!";
+						cout << "\n\n\n\n\n\t\t\tGame Over! " << endl;
 					}
 					else if (map[playerRow][playerCol] == '0') {
 						playerRow = 14;
